@@ -1,15 +1,15 @@
 from selenium import webdriver
 from course import get_courses_from_selenium
 from subject import get_subjects_from_selenium
-import config
-import random
+# import config
+# import random
 import urllib.parse
 import jsonpickle
 
 
-def rand_proxy():
-    proxy = random.choice(config.ips)
-    return proxy
+# def rand_proxy():
+#     proxy = random.choice(config.ips)
+#     return proxy
 
 
 def format_url(session="", subject_code="", course_number="", pname="subjarea", tname=""):
@@ -46,7 +46,6 @@ def get_selenium_driver_for_url(url):
     chrome_options.add_argument('--headless=new')
     chrome_options.page_load_strategy = 'eager'
     chrome_options.add_experimental_option('excludeSwitches', ['enable-logging'])
-    # chrome_options.add_experimental_option('detach', True)  # doesn't close browser after
     driver = webdriver.Chrome(options=chrome_options)
     driver.get(url)
     return driver
