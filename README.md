@@ -2,8 +2,8 @@
 
 ## Motivation
 
-Course scheduling can be complex and stressful. Adapting this into a CSP, we can 'solve' and 
-simplify this process. 
+Course scheduling can be complex and stressful - I want to create a 
+[course scheduler](https://github.com/Jordnos/coursescheduler) that can simplify this process. 
 
 The first step is to get information on all the courses. The goal of this program is to get the needed 
 information, so I can use it for the course scheduler, while also learning python. I did this referencing 
